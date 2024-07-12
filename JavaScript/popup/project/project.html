@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyNotes</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">    
+        <h1>KeyNotes</h1>
+    </div>
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>Rich and Poor</h2>
+            <h5>Richard Johnson</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem doloribus dignissimos quibusdam, numquam quam ut amet reiciendis quasi facilis blanditiis. Voluptatum repellat rerum doloribus aperiam repudiandae ea cumque voluptate libero.</p>
+            <button onclick="delet(event)">Delete</button>
+        </div>
+        
+    </div>
+    <div class="overlay"></div>
+    <div class="popup">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="booktitle">
+            <input type="text" placeholder="Book Author" id="bookauthor">
+            <textarea placeholder="Short Description" id="bookdescription"></textarea>
+            <button id="add">ADD</button>
+            <button id="cancle">CANCLE</button>
+        </form>
+    </div>
+
+    <button class="addbutton" id="btn" onclick="show()">+</button>
+
+    <script src="project.js"></script>
+</body>
+</html>

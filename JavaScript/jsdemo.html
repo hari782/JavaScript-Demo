@@ -1,0 +1,241 @@
+<!-- <p id="title">Hello World</p>
+<script>
+    document.getElementById("title").innerHTML = "Bye"
+</script> -->
+
+
+<!-- <h1 id="title">Hello World</h1>
+<button onclick="change()" onclick="change1()">Change</button>
+<script>
+    function change(){
+        document.getElementById("title").innerHTML="Bye World"
+    }
+    function change1(){
+        document.getElementById("title").innerHTML="Hello World"
+    }
+</script> -->
+
+
+<!-- <input id="num1">
+<input id="num2">
+<button onclick="add()">Add</button>
+<p id="Sum">Result</p>
+<script>
+    var box1 = document.getElementById("num1")
+    var box2 = document.getElementById("num2")
+    var sumresult = document.getElementById("Sum")
+    function add() {
+        var box1value = Number(box1.value)
+        var box2value = Number(box2.value)
+        var total = box1value+box2value
+        sumresult.textContent = total
+    }
+</script>
+
+<input id="num3">
+<input id="num4">
+<button onclick="sub()">Sub</button>
+<p id="Sub">Result</p>
+<script>
+    var box3 = document.getElementById("num3")
+    var box4 = document.getElementById("num4")
+    var subresult = document.getElementById("Sub")
+    function sub() {
+        var box3value = Number(box3.value)
+        var box4value = Number(box4.value)
+        var subtotal = box3value-box4value
+        subresult.textContent = subtotal
+    }
+</script>
+
+<input id="num5">
+<input id="num6">
+<button onclick="mul()">Mul</button>
+<p id="Mul">Result</p>
+<script>
+    var box5 = document.getElementById("num5")
+    var box6 = document.getElementById("num6")
+    var mulresult = document.getElementById("Mul")
+    function mul() {
+        var box5value = Number(box5.value)
+        var box6value = Number(box6.value)
+        var multotal = box5value*box6value
+        mulresult.textContent = multotal
+    }
+</script>
+
+<input id="num7">
+<input id="num8">
+<button onclick="div()">Div</button>
+<p id="Div">Result</p>
+<script>
+    var box7 = document.getElementById("num7")
+    var box8 = document.getElementById("num8")
+    var divresult = document.getElementById("Div")
+    function div() {
+        var box7value = Number(box7.value)
+        var box8value = Number(box8.value)
+        var total = box7value/box8value
+        divresult.textContent = total
+    }
+</script> -->
+
+
+<!-- <h1>Guess the number...</h1>
+<h2>Enter the number from 1 to 10</h2>
+<input id="box">
+<button onclick="check()">Check</button>
+<p id="result">Check your luck</p>
+<p id="score">Score:10</p>
+<script>
+    var a = document.getElementById("box")
+    var r = Math.floor(Math.random()*10)+1
+    var b = document.getElementById("result")
+    var c = document.getElementById("score")
+    var score = 10
+    function check() {
+        var e = a.value
+        if(e==r){
+            b.textContent="Correct"
+            alert("You Won...")
+        } else {
+            score--
+            c.textContent = "Score:" + score
+        }
+    }
+</script> -->
+
+
+<!-- <style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        transition: 5s;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .widthMax{
+        width: 100%;
+        height: 90%;
+    }
+</style>
+<div id="box">
+    <h1 id="rs"></h1>
+</div>
+<button onclick="change()">Change</button>
+<script>
+    var box = document.getElementById("box")
+    var rs = document.getElementById("rs")
+    function change() {
+        box.style.backgroundColor="Blue"
+        box.setAttribute("class","widthMax")
+        rs.textContent = "Rohit Sharma"
+    }
+</script> -->
+
+
+<!-- <input id="box" onkeyup="update()">
+<h1 id="result"></h1>
+<script>
+    var box = document.getElementById("box")
+    var result = document.getElementById("result")
+    function update(){
+        result.textContent=box.value
+    }
+</script> -->
+
+
+<!-- <button onclick="add()">Add</button>
+<div id="hello"></div>
+<script>
+    var hello = document.getElementById("hello")
+    function add() {
+        var h = document.createElement("h1")
+        h.textContent="Hello"
+        hello.append(h)
+    }
+</script> -->
+
+
+<!-- <button id="btn" onclick="change()" style="background-color: aliceblue;">change</button>
+
+<script>
+    var btn =document.getElementById("btn")
+    function change(){
+        btn.style.backgroundColor="red"
+    }
+</script> -->
+
+
+<!-- <h1 id="name">Name</h1>
+<button onclick="update(event)">Hari</button>
+<button onclick="update(event)">Balaji</button>
+<button onclick="update(event)">Haribalaji</button>
+<script>
+    var h1 = document.getElementById("name")
+    function update(event){
+        h1.textContent = event.target.textContent
+    }
+</script> -->
+
+
+<!-- <h1 onclick="deleye(event)">One</h1>
+<h1 onclick="deleye(event)">Two</h1>
+<h1 onclick="deleye(event)">Three</h1>
+<h1 onclick="deleye(event)">Four</h1>
+<h1 onclick="deleye(event)">Five</h1>
+<h1 onclick="deleye(event)">Six</h1>
+<h1 onclick="deleye(event)">Seven</h1>
+<h1 onclick="deleye(event)">Eight</h1>
+<h1 onclick="deleye(event)">Nine</h1>
+<h1 onclick="deleye(event)">Ten</h1>
+<script>
+    function deleye() {
+        event.target.remove()
+    }
+
+</script> -->
+
+<!-- <div id="o">
+<h1 class="ok">One</h1>
+<h1 class="ok">One</h1>
+</div>
+<script>
+    var h = document.getElementsByTagName("div")
+    console.log(h)
+</script> -->
+
+
+<!-- <h1>One</h1>
+<h1>Two</h1>
+<h1>Three</h1>
+<script>
+    var h = document.querySelectorAll("h1")
+    for(i=0;i<h.length;i++){
+        console.log(h[i].insertAdjacentText("where : 3","data : Four"))
+    }
+</script> -->
+
+
+<!-- <input id="box">
+<button onclick="add()">Add</button>
+<ul id="ull">
+    <li>Hello
+        <button onclick="delet(event)">Delete</button>
+    </li>
+</ul>
+<script>
+    var inputbox = document.getElementById("box")
+    var ullist = document.getElementById("ull")
+    function add(){
+        var newlist = document.createElement("li")
+        newlist.innerHTML = inputbox.value + "<button onclick='delet(event)'>Delete</button>"
+        ullist.append(newlist)
+    }
+    function delet(event) {
+        event.target.parentElement.remove()
+    }
+</script> -->
